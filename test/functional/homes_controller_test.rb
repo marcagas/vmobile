@@ -8,7 +8,7 @@ class HomesControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:homes)
+    assert_not_nil assigns(:home)
   end
 
   test "should get new" do
