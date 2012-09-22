@@ -1,0 +1,25 @@
+= form_for @technouser, html: { class: 'form-horizontal' } do |f|
+  .control-group
+    %label.control-label Name
+    .controls
+      = f.text_field :name
+
+  .control-group
+    %label.control-label ID
+    .controls
+      = f.text_field :user_id
+
+  .control-group
+    %label.control-label Amount
+    .controls
+      = f.text_field :amount
+
+  .control-group
+    %label.control-label Date Sold
+    .controls
+      = f.text_field :date_sold
+
+  .control-group
+    .controls
+      = button_tag
+

@@ -1,0 +1,25 @@
+
+%h2 TECHNO USERS SALES
+= link_to techno_users_new_path do
+  %i.icon-list-alt
+  New
+%table.table.table-bordered.table-striped
+  %thead
+    %th Techno User
+    %th Techno User ID
+    %th Amount
+    %th Date Sold
+    %th
+
+  %tbody
+    - @technousers.each do |user|
+      %tr
+        %td= user.name
+        %td= user.user_id
+        %td= user.amount
+        %td= user.date_sold
+        %td
+          = link_to 'View Details', techno_user_path(user)
+
+
+

@@ -1,0 +1,29 @@
+%h2 Techno User Details
+.span8
+  .control-group
+    .controls
+      = @technouser.name
+
+  .control-group
+    .controls
+    = @technouser.user_id
+
+  .control-group
+    .controls
+      = @technouser.amount
+
+  .control-group
+    .controls
+      = @technouser.date_sold
+
+= link_to techno_users_path do
+  %i.icon-list-alt
+  Back
+
+= link_to edit_techno_user_path(@technouser) do
+  %i.icon-list-alt
+  Edit
+
+= link_to techno_user_path(@technouser), :method => 'delete' do
+  %i.icon-list-alt
+  Destroy
